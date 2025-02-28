@@ -1,11 +1,42 @@
 package ed.lab;
 
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.Random;
+
 public class Main {
-    private static final ArrayGenerator<Integer> sortedArrayGenerator = null; // Reemplácelo por una función lambda
+    private static final ArrayGenerator<Integer> sortedArrayGenerator = (int length) -> {
 
-    private static final ArrayGenerator<Integer> invertedArrayGenerator = null; // Reemplácelo por una función lambda
+    Integer[] arreglo = new Integer[length];
+    for(int i = 0; i<length ; i++ ){
 
-    private static final ArrayGenerator<Integer> randomArrayGenerator = null; // Reemplácelo por una función lambda
+        arreglo[i] = i;
+    }
+        return arreglo;
+    };
+
+
+    // Reemplácelo por una función lambda
+
+    private static final ArrayGenerator<Integer> invertedArrayGenerator = (int length) -> {
+
+        Integer[] arreglo = new Integer[length];
+        for(int i = 0; i<length ; i++){
+
+            arreglo[i] = length-1-i;
+        }
+        return arreglo;
+    };
+
+    private static final ArrayGenerator<Integer> randomArrayGenerator = (int length) -> {
+        Random random = new Random();
+        Integer[] arreglo = new Integer[length];
+        for(int i = 0; i<length ; i++){
+
+            arreglo[i] = random.nextInt(100);
+        }
+        return arreglo;
+    }; // Reemplácelo por una función lambda
 
     private static final QuickSort<Integer> highPivotQuickSort = null; // Reemplácelo por una referencia a un método
 
@@ -66,5 +97,7 @@ public class Main {
         System.out.println("\tUtilizando un elemento aleatorio como pivote: ");
         tester.testSorting(randomArrayGenerator, randomPivotQuickSort);
         System.out.println("================================");
+
+
     }
 }

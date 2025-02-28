@@ -4,4 +4,8 @@ public interface ArrayGenerator<T> {
 
     T[] generate(int length);
 
+
+
+
+
 }
