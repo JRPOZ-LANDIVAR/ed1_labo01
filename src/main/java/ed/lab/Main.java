@@ -15,7 +15,7 @@ public class Main {
         return arreglo;
     };
 
-
+/// ///
 
 
     private static final ArrayGenerator<Integer> invertedArrayGenerator = (int length) -> {
