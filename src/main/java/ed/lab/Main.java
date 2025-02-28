@@ -38,11 +38,11 @@ public class Main {
         return arreglo;
     };
 
-    private static final QuickSort<Integer> highPivotQuickSort = null; // Reemplácelo por una referencia a un método
+    private static final QuickSort<Integer> highPivotQuickSort =  array -> SortingAlgorithms.highPivotQuickSort(array); // Reemplácelo por una referencia a un método
 
-    private static final QuickSort<Integer> lowPivotQuickSort = null; // Reemplácelo por una referencia a un método
+    private static final QuickSort<Integer> lowPivotQuickSort = array -> SortingAlgorithms.lowPivotQuickSort(array); // Reemplácelo por una referencia a un método
 
-    private static final QuickSort<Integer> randomPivotQuickSort = null; // Reemplácelo por una referencia a un método
+    private static final QuickSort<Integer> randomPivotQuickSort = array -> SortingAlgorithms.randomPivotQuickSort(array); // Reemplácelo por una referencia a un método
 
     public static QuickSort<Integer> getHighPivotQuickSort() {
         return highPivotQuickSort;
