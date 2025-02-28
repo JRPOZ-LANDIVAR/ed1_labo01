@@ -16,7 +16,7 @@ public class Main {
     };
 
 
-    // Reemplácelo por una función lambda
+
 
     private static final ArrayGenerator<Integer> invertedArrayGenerator = (int length) -> {
 
@@ -36,7 +36,7 @@ public class Main {
             arreglo[i] = random.nextInt(100);
         }
         return arreglo;
-    }; // Reemplácelo por una función lambda
+    };
 
     private static final QuickSort<Integer> highPivotQuickSort = null; // Reemplácelo por una referencia a un método
 
